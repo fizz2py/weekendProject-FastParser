@@ -68,6 +68,11 @@ void Parser::sortBySalary()
         });
 }
 
+const std::vector<Person>& Parser::getPeople() const
+{
+    return people;
+}
+
 void Parser::writeCSV(const std::string& filename) const
 {
     std::ofstream file(filename);

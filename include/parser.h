@@ -13,5 +13,8 @@ public:
     void readCSV(const std::string& filename);
     void displayData() const;
     void sortBySalary();
-void writeCSV(const std::string& filename) const;
+    void writeCSV(const std::string& filename) const;
+
+
+    const std::vector<Person>& getPeople() const;
 };
