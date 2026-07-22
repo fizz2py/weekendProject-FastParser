@@ -49,3 +49,16 @@ target_compile_options(stl_advanced_algorithms PRIVATE
     -Wextra
     -Werror
 )
+add_executable(stl_transformation_pipeline
+    Day13/MainTransformationPipeline.cpp
+    src/parser.cpp
+    src/person.cpp
+)
+
+target_include_directories(stl_transformation_pipeline PRIVATE include)
+
+target_compile_options(stl_transformation_pipeline PRIVATE
+    -Wall
+    -Wextra
+    -Werror
+)
