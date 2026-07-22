@@ -34,3 +34,31 @@ target_compile_options(stl_container_benchmarks PRIVATE
     -Wextra
     -Werror
 )
+
+# Day 12 executable
+add_executable(stl_advanced_algorithms
+    Day12/MainAdvancedAlgorithms.cpp
+    src/parser.cpp
+    src/person.cpp
+)
+
+target_include_directories(stl_advanced_algorithms PRIVATE include)
+
+target_compile_options(stl_advanced_algorithms PRIVATE
+    -Wall
+    -Wextra
+    -Werror
+)
+add_executable(stl_transformation_pipeline
+    Day13/MainTransformationPipeline.cpp
+    src/parser.cpp
+    src/person.cpp
+)
+
+target_include_directories(stl_transformation_pipeline PRIVATE include)
+
+target_compile_options(stl_transformation_pipeline PRIVATE
+    -Wall
+    -Wextra
+    -Werror
+)
